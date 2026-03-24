@@ -1,0 +1,12 @@
+name: Dev Push Workflow
+on:
+    push:
+        branches:
+            - dev
+jobs:
+    push-jobs:
+        runs-on: ubuntu-latest
+        steps:
+            - name: push-dev
+              run: echo "This workflow runs because you pushed to dev."
+              
